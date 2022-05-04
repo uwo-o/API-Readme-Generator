@@ -1,0 +1,13 @@
+{
+    "title": "API README GENERATOR",
+    "description": "This is a simple API README generator. It will generate a README.md file for you to use in your web documentation.",
+    "url": "https://github.com/uwo-o",
+    "license": "",
+    "license_url": "",
+    "version": "0.1a0",
+    "author": "uwo-o",
+    "author_url": "http://uwo.pythonanywhere.com/",
+    "repository": "API-Readme-Generator",
+    "repository_url": "https://github.com/uwo-o/API-Readme-Generator",
+    "keywords": ""
+}
