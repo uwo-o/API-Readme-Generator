@@ -1,16 +1,29 @@
 {
     "title": "API README GENERATOR",
     "description": "This is a simple API README generator. It will generate a README.md file for you to use in your web documentation.",
-    "url": "https://github.com/uwo-o",
+    "url": "https://api.uwo.pythonanywhere.com/create_md",
     "license": "",
     "license_url": "",
-    "version": "0.1a0",
+    "version": "0.1a1",
     "author": "uwo-o",
     "author_url": "http://uwo.pythonanywhere.com/",
     "contributors": [
         {
             "name": "uwo-o",
-            "url": "http://uwo.pythonanywhere.com/"
+            "social_media": [
+                {
+                    "name": "Github",
+                    "url": "http://github.com/uwo-o"
+                },
+                {
+                    "name": "Website",
+                    "url": "http://uwo.pythonanywhere.com/"
+                },
+                {
+                    "name": "LinkedIn",
+                    "url": "http://www.linkedin.com/in/uwo-o"
+                }
+            ]
         }
     ],
     "repository": "API-Readme-Generator",
