@@ -7,7 +7,21 @@
     "version": "0.1a0",
     "author": "uwo-o",
     "author_url": "http://uwo.pythonanywhere.com/",
+    "contributors": [
+        {
+            "name": "uwo-o",
+            "url": "http://uwo.pythonanywhere.com/"
+        }
+    ],
     "repository": "API-Readme-Generator",
     "repository_url": "https://github.com/uwo-o/API-Readme-Generator",
-    "keywords": ""
+    "keywords": [
+        "api",
+        "readme",
+        "generator"
+    ],
+    "languages": "Python",
+    "technologies": [
+        "Flask"
+    ]
 }
