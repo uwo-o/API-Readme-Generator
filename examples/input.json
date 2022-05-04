@@ -33,7 +33,9 @@
         "readme",
         "generator"
     ],
-    "languages": "Python",
+    "languages": [
+        "Python"
+    ],
     "technologies": [
         "Flask"
     ],
