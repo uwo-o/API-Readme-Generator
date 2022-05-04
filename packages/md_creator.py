@@ -30,13 +30,14 @@ def create_md(data):
         f.write('\n')
         f.write('## Table of Contents\n')
         f.write('\n')
-        f.write('* [Installation](#installation)\n')
-        f.write('* [Usage](#usage)\n')
+        if(installation):
+            f.write('* [Installation](#installation)\n')
+        if(usage):
+            f.write('* [Usage](#usage)\n')
         f.write('* [Contributing](#contributing)\n')
         f.write('\n')
         f.write('## Installation\n')
         f.write('\n')
-        for step in 
         f.write('## Usage\n')
         f.write('\n')
         f.write('## Contributing\n')
