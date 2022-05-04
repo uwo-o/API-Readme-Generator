@@ -23,5 +23,24 @@
     "languages": "Python",
     "technologies": [
         "Flask"
+    ],
+    "installation": [
+        {
+            "step": "1",
+            "title": "Install Dependencies",
+            "description": "Lorem Ipsum.",
+            "commands":["pip install -r requirements.txt"]
+
+        }
+    ],
+    "usage": [
+        {
+            "step": "1",
+            "title": "Call API",
+            "description": "Lorem Ipsum.",
+            "commands": ["https://api.uwo.pythonanywhere.com/create_md"],
+            "input": []
+        }
     ]
+        
 }
