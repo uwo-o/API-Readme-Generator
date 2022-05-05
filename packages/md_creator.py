@@ -77,6 +77,7 @@ def create_md(data):
             for contributor in contributors:
                 f.write('> <img align="center" src="https://github.com/'+contributor["name"]+'.png" width="40px" style="border-radius:50%"></img> '+contributor["name"]+'\n')
                 if contributor["social_media"]:
+                    f.write('\n>')
                     for social_media in contributor["social_media"]:
                         f.write('[!['+social_media["name"]+'](https://img.shields.io/badge/'+social_media["name"]+'-ffffff?style=for-the-badge&logo='+social_media["name"]+'&logoColor=black)]('+social_media["url"]+') ')
                 f.write('\n')

@@ -30,7 +30,8 @@ Example of the JSON data to be sent.
 ## Contributing
 
 > <img align="center" src="https://github.com/uwo-o.png" width="40px" style="border-radius:50%"></img> uwo-o
-[![Github](https://img.shields.io/badge/Github-ffffff?style=for-the-badge&logo=Github&logoColor=black)](http://github.com/uwo-o) [![LinkedIn](https://img.shields.io/badge/LinkedIn-ffffff?style=for-the-badge&logo=LinkedIn&logoColor=black)](http://www.linkedin.com/in/uwo-o) [![Website](https://img.shields.io/badge/Website-ffffff?style=for-the-badge&logo=Website&logoColor=black)](http://uwo.pythonanywhere.com/) 
+
+>[![Github](https://img.shields.io/badge/Github-ffffff?style=for-the-badge&logo=Github&logoColor=black)](http://github.com/uwo-o) [![LinkedIn](https://img.shields.io/badge/LinkedIn-ffffff?style=for-the-badge&logo=LinkedIn&logoColor=black)](http://www.linkedin.com/in/uwo-o) [![Website](https://img.shields.io/badge/Website-ffffff?style=for-the-badge&logo=Website&logoColor=black)](http://uwo.pythonanywhere.com/) 
 
 
 ## Languages
