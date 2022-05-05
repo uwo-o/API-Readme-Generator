@@ -14,8 +14,7 @@ md_creator.create_md(data)
 def create_md():
 
     # We get the JSON file from the frontend.
-    # data = request.get_json()
-    data = json.loads(request.data)
+    data = request.get_json()
 
     # We create the MD file.
     md_creator.create_md(data)
