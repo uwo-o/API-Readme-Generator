@@ -13,6 +13,7 @@ This is a simple API README generator. It will generate a README.md file for you
 
 1. Install Dependencies
 We need to install some dependencies before we can get started.
+
 ``pip install -r requirements.txt``
 
 ## Usage

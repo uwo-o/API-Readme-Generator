@@ -49,6 +49,7 @@ def create_md(data):
                 f.write(step["description"] + '\n')
                 if step["commands"]:
                     for command in step["commands"]:
+                        f.write('\n')
                         f.write('``' + command + '``\n')
 
             f.write('\n')
