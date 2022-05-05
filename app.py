@@ -5,11 +5,6 @@ import os
 
 app = Flask(__name__)
 
-data = json.load(open('examples/input.json'), encoding='utf-8')
-
-# We create the MD file.
-md_creator.create_md(data)
-
 # This route gets a JSON file from the frontend with the parameters to create the MD
 @app.route('/create_md', methods=['POST'])
 def create_md():
