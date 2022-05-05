@@ -1,6 +1,12 @@
+from email.policy import strict
+from fileinput import filename
 import json
+import random
+import string
 
 def create_md(data):
+    filename = ''
+    for i in range(10):filename+=random.choice(string.ascii_lowercase+string.ascii_uppercase+string.digits)
 
     # We get the parameters from the JSON file.
     title = data["title"]
@@ -21,7 +27,7 @@ def create_md(data):
     usage = data["usage"]
 
     # We create the MD file.
-    with open('output/README.md', 'w') as f:
+    with open('output/'+filename+'.md', 'w') as f:
         f.write('# ' + title + '\n')
         f.write('[![Version](https://img.shields.io/badge/version-' + version + '-brightgreen.svg)](' + url + ')')
         if license:
@@ -110,4 +116,4 @@ def create_md(data):
         f.write('Created by: ['+author+']('+author_url+')\n')
 
     # We return the message to the frontend.
-    return 'README.md file created.'
+    return filename
