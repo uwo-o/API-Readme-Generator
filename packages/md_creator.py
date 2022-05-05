@@ -61,9 +61,11 @@ def create_md(data):
                 f.write(step["description"] + '\n')
                 if step["commands"]:
                     for command in step["commands"]:
+                        f.write('\n')
                         f.write('``' + command + '``\n')
                 if step["input"]:
                     for input in step["input"]:
+                        f.write('\n')
                         f.write(input["description"]+'\n')
                         f.write('['+input["name"]+']('+input["url"]+')\n')
             f.write('\n')
@@ -76,6 +78,7 @@ def create_md(data):
                 f.write('> <img align="center" src="https://github.com/'+contributor["name"]+'.png" width="40px" style="border-radius:50%"></img> '+contributor["name"]+'\n')
                 if contributor["social_media"]:
                     for social_media in contributor["social_media"]:
+                        f.write('\n')
                         f.write('[!['+social_media["name"]+'](https://img.shields.io/badge/'+social_media["name"]+'-ffffff?style=for-the-badge&logo='+social_media["name"]+'&logoColor=black)]('+social_media["url"]+') ')
                 f.write('\n')
             f.write('\n')
@@ -83,16 +86,18 @@ def create_md(data):
             f.write('\n')
             f.write('## Languages\n')
             f.write('\n')
+            f.write('* Languages used to create it: \n')
             for language in languages:
-                f.write('* Languages used to create it: \n')
+                f.write('\n')
                 f.write('!['+language+'](https://img.shields.io/badge/'+language+'-ffffff?style=for-the-badge&logo='+language+'&logoColor=black) ')
             f.write('\n')
         if(technologies):
             f.write('\n')
             f.write('## Technologies\n')
             f.write('\n')
+            f.write('* Technologies used to create it: \n')
             for technology in technologies:
-                f.write('* Technologies used to create it: \n')
+                f.write('\n')
                 f.write('!['+technology+'](https://img.shields.io/badge/'+technology+'-ffffff?style=for-the-badge&logo='+technology+'&logoColor=black) ')
             f.write('\n')
         if(keywords):
