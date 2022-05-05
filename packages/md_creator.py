@@ -87,8 +87,8 @@ def create_md(data):
             f.write('## Languages\n')
             f.write('\n')
             f.write('* Languages used to create it: \n')
+            f.write('\n')
             for language in languages:
-                f.write('\n')
                 f.write('!['+language+'](https://img.shields.io/badge/'+language+'-ffffff?style=for-the-badge&logo='+language+'&logoColor=black) ')
             f.write('\n')
         if(technologies):
@@ -96,8 +96,8 @@ def create_md(data):
             f.write('## Technologies\n')
             f.write('\n')
             f.write('* Technologies used to create it: \n')
+            f.write('\n')
             for technology in technologies:
-                f.write('\n')
                 f.write('!['+technology+'](https://img.shields.io/badge/'+technology+'-ffffff?style=for-the-badge&logo='+technology+'&logoColor=black) ')
             f.write('\n')
         if(keywords):
