@@ -1,6 +1,7 @@
-from flask import Flask, request
+from flask import Flask, request, redirect
 from packages import md_creator
 import json
+import os
 
 app = Flask(__name__)
 
@@ -17,10 +18,15 @@ def create_md():
     data = request.get_json()
 
     # We create the MD file.
-    md_creator.create_md(data)
+    filename = md_creator.create_md(data)
 
-    # We return a message to the frontend.
-    return 'MD file created!'
+    text = str(open('output/'+filename+'.md', 'r').read())
+
+    # We delete the file.
+    os.remove('output/'+filename+'.md')
+
+    # We return the file created.
+    return text
 
 
 if __name__ == '__main__':
