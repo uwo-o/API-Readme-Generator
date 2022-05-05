@@ -1,4 +1,3 @@
-# We import the following modules:
 from flask import Flask, request
 from packages import md_creator
 import json
