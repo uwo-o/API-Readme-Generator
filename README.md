@@ -21,8 +21,6 @@ We need to install some dependencies before we can get started.
 1. Call API
 We need to send the JSON using POST method with the data.
 
-``https://api.uwo.pythonanywhere.com/create_md``
-
 Example of the JSON data to be sent.
 [Example input](https://github.com/uwo-o/API-Readme-Generator/blob/master/examples/input.json)
 
