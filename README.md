@@ -15,10 +15,12 @@ This is a simple API README generator. It will generate a README.md file for you
 We need to install some dependencies before we can get started.
 
 ``pip install -r requirements.txt``
+
 2. Run the Application
 Now that we have our dependencies installed, we can run the application.
 
 ``python app.py``
+
 
 ## Usage
 
@@ -27,8 +29,10 @@ We need to send the JSON using POST method with the data.
 
 ``LOCALHOST:5000/create_md``
 
+
 Example of the JSON data to be sent.
 [Example input](https://github.com/uwo-o/API-Readme-Generator/blob/master/examples/input.json)
+
 
 
 ## Contributing
