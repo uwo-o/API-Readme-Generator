@@ -17,8 +17,15 @@ def create_md():
     # We get the JSON file from the frontend.
     data = request.get_json()
 
-    # We create the MD file.
-    filename = md_creator.create_md(data)
+    filename=''
+
+    try:
+        # We create the MD file.
+        filename = md_creator.create_md(data)
+
+    except Exception as e:
+        # We return the error.
+        return str(e)
 
     text = str(open('output/'+filename+'.md', 'r').read())
 
