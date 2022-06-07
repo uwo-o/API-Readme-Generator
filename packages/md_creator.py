@@ -80,6 +80,7 @@ def create_md(data):
                     for command in step["commands"]:
                         f.write('\n')
                         f.write('``' + command + '``\n')
+                        f.write('\n')
 
             f.write('\n')
 
@@ -98,6 +99,7 @@ def create_md(data):
                     for command in step["commands"]:
                         f.write('\n')
                         f.write('``' + command + '``\n')
+                        f.write('\n')
 
                 # If exist examples we print them
                 if step["input"]:
@@ -105,6 +107,7 @@ def create_md(data):
                         f.write('\n')
                         f.write(input["description"]+'\n')
                         f.write('['+input["name"]+']('+input["url"]+')\n')
+                        f.write('\n')
             f.write('\n')
 
         # If exist contributors we print it
