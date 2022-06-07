@@ -1,10 +1,10 @@
 {
     "title": "API README GENERATOR",
     "description": "This is a simple API README generator. It will generate a README.md file for you to use in your web documentation.",
-    "url": "https://api.uwo.pythonanywhere.com/create_md",
+    "url": "https://api-readme-generator.herokuapp.com/create_md",
     "license": "",
     "license_url": "",
-    "version": "0.1a1",
+    "version": "0.1a2",
     "author": "uwo-o",
     "author_url": "http://uwo.pythonanywhere.com/",
     "contributors": [
@@ -46,6 +46,13 @@
             "description": "We need to install some dependencies before we can get started.",
             "commands":["pip install -r requirements.txt"]
 
+        },
+        {
+            "step": "2",
+            "title": "Run the Application",
+            "description": "Now that we have our dependencies installed, we can run the application.",
+            "commands":["python app.py"]
+
         }
     ],
     "usage": [
@@ -53,7 +60,7 @@
             "step": "1",
             "title": "Call API",
             "description": "We need to send the JSON using POST method with the data.",
-            "commands": ["https://api.uwo.pythonanywhere.com/create_md"],
+            "commands": ["LOCALHOST:5000/create_md"],
             "input": [
                 {
                     "name": "Example input",
