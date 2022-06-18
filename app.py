@@ -1,9 +1,11 @@
 from flask import Flask, request, redirect
 from packages import md_creator
+from flask_cors import CORS
 import json
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 # This route gets a JSON file from the frontend with the parameters to create the MD
 @app.route('/create_md', methods=['POST'])
