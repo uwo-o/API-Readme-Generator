@@ -106,10 +106,11 @@ def create_md(data):
                 # If exist examples we print them
                 if step["input"]:
                     for input in step["input"]:
-                        if input !="":
                             f.write('\n')
-                            f.write(input["description"]+'\n')
-                            f.write('['+input["name"]+']('+input["url"]+')\n')
+                            if input["description"]!="":
+                                f.write(input["description"]+'\n')
+                            if input["name"]!="" and input["url"]!="":
+                                f.write('['+input["name"]+']('+input["url"]+')\n')
                             f.write('\n')
             f.write('\n')
 
