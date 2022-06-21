@@ -78,9 +78,10 @@ def create_md(data):
                 # If exist commands we print them
                 if step["commands"]:
                     for command in step["commands"]:
-                        f.write('\n')
-                        f.write('``' + command + '``\n')
-                        f.write('\n')
+                        if command !="":
+                            f.write('\n')
+                            f.write('``' + command + '``\n')
+                            f.write('\n')
 
             f.write('\n')
 
@@ -97,17 +98,19 @@ def create_md(data):
                 # If exist commands we print them
                 if step["commands"]:
                     for command in step["commands"]:
-                        f.write('\n')
-                        f.write('``' + command + '``\n')
-                        f.write('\n')
+                        if command != "":
+                            f.write('\n')
+                            f.write('``' + command + '``\n')
+                            f.write('\n')
 
                 # If exist examples we print them
                 if step["input"]:
                     for input in step["input"]:
-                        f.write('\n')
-                        f.write(input["description"]+'\n')
-                        f.write('['+input["name"]+']('+input["url"]+')\n')
-                        f.write('\n')
+                        if input !="":
+                            f.write('\n')
+                            f.write(input["description"]+'\n')
+                            f.write('['+input["name"]+']('+input["url"]+')\n')
+                            f.write('\n')
             f.write('\n')
 
         # If exist contributors we print it
@@ -124,7 +127,8 @@ def create_md(data):
                 if contributor["social_media"]:
                     f.write('\n')
                     for social_media in contributor["social_media"]:
-                        f.write('[!['+social_media["name"]+'](https://img.shields.io/badge/'+social_media["name"]+'-ffffff?style=for-the-badge&logo='+social_media["name"]+'&logoColor=black)]('+social_media["url"]+') ')
+                        if social_media != "":
+                            f.write('[!['+social_media["name"]+'](https://img.shields.io/badge/'+social_media["name"]+'-ffffff?style=for-the-badge&logo='+social_media["name"]+'&logoColor=black)]('+social_media["url"]+') ')
                 f.write('\n')
             f.write('\n')
 
