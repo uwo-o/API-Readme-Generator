@@ -29,10 +29,12 @@ def create_md(data):
     with open('output/'+filename+'.md', 'w') as f:
 
         # We write the title.
-        f.write('# ' + title + '\n')
+        if title:
+            f.write('# ' + title + '\n')
         
         # We write the version badge
-        f.write('[![Version](https://img.shields.io/badge/version-' + version + '-brightgreen.svg)](' + url + ')')
+        if version:
+            f.write('[![Version](https://img.shields.io/badge/version-' + version + '-brightgreen.svg)](' + url + ')')
 
         # If exist license badge we print it
         if license:
@@ -40,9 +42,10 @@ def create_md(data):
         f.write('\n')
         f.write('\n')
 
-        # We write the description.
-        f.write(description + '\n')
-        f.write('\n')
+        if description:
+            # We write the description.
+            f.write(description + '\n')
+            f.write('\n')
 
         # If exist installation tutorial we print their hypertext
         if installation:
@@ -167,7 +170,8 @@ def create_md(data):
         f.write('---\n')
 
         # And print the author
-        f.write('Created by: ['+author+']('+author_url+')\n')
+        if author:
+            f.write('Created by: ['+author+']('+author_url+')\n')
 
     # We return the message to the frontend.
     return filename
