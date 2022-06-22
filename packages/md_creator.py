@@ -166,11 +166,10 @@ def create_md(data):
             f.write('\n')
         f.write('\n')
 
-        # We print a separator
-        f.write('---\n')
-
         # And print the author
         if author:
+            # We print a separator
+            f.write('---\n')
             f.write('Created by: ['+author+']('+author_url+')\n')
 
     # We return the message to the frontend.
